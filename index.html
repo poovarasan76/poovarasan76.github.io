@@ -35,7 +35,7 @@
     }
 
     header img {
-      height: 200px;
+      height: 60px;
     }
 
     header nav a {
@@ -125,7 +125,42 @@
     footer span {
       color: var(--orange);
     }
+    .trainer {
+  background-color: #f8f9fb;
+}
+
+.trainer-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.trainer-title {
+  color: #0B3C5D;
+  margin-bottom: 15px;
+}
+
+.trainer-role {
+  font-weight: 600;
+  color: #1F618D;
+}
+
+.trainer-exp {
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.trainer-quote {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-left: 4px solid var(--orange);
+  color: #555;
+}
+
   </style>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </head>
 
 <body>
@@ -135,6 +170,7 @@
     <img src="logo.png" alt="InReady Labs Logo">
     <nav>
       <a href="#about">About</a>
+      <a href="#trainer">Trainer</a>
       <a href="#courses">Courses</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -142,7 +178,8 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>Industry-Ready Tech Training</h1>
+    <h1>Build Industry-Ready Tech Skills</h1>
+    <p>Learn Today. Get Industry-Ready Tomorrow.</p>
     <p>
       InReady Labs helps students and fresh graduates become industry-ready
       with hands-on, placement-focused training in core technologies.
@@ -160,7 +197,7 @@
       </div>
       <div class="card">
         <h3>Hands-On Learning</h3>
-        <p>Every concept is taught with practical SQL queries and mini projects.</p>
+        <p>Every concept is taught with practical and mini projects.</p>
       </div>
       <div class="card">
         <h3>Placement Ready</h3>
@@ -174,7 +211,7 @@
     <h2 class="section-title">Our Courses</h2>
     <div class="cards">
       <div class="card">
-        <h3>SQL Fast Track (2 Days)</h3>
+        <h3>SQL</h3>
         <ul>
           <li>SQL Fundamentals & Joins</li>
           <li>Advanced Queries & Subqueries</li>
@@ -201,16 +238,59 @@
     </div>
   </section>
 
-  <!-- HIGHLIGHT -->
-  <div class="highlight">
-    <h2 class="section-title">Why Choose Us?</h2>
-    <p>
-      ✔ Trainer with real industry experience <br>
-      ✔ College & placement-oriented delivery <br>
-      ✔ Simple explanations with strong fundamentals <br>
-      ✔ Career Guidance & support
+  <!-- Trainer Profile Section -->
+<section id="trainer" class="trainer">
+  <div class="trainer-container">
+
+    <h2 class="trainer-title">
+      Meet Your Trainer
+    </h2>
+
+    <h3 class="trainer-role">
+      Poovarasan Manickam
+    </h3>
+
+    <p class="trainer-exp">
+      Technical Architect – Backend Engineering
     </p>
+
+    <p style="margin: 5px 0 20px; color: #FF8C00; font-weight: 600;">
+      16+ Years of IT Industry Experience
+    </p>
+
+    <p style="line-height: 1.8; color: #333;">
+      With over <strong>16 years of experience</strong> in the IT industry, I have worked on
+      real-world enterprise applications and scalable backend systems. My core expertise includes
+      <strong>Java, Spring Boot, Microservices, SQL, and System Design</strong>.
+    </p>
+
+    <p style="line-height: 1.8; color: #333;">
+      I have designed production-grade systems, collaborated with cross-functional teams, and
+      participated in technical interviews. Through <strong>InReady Labs</strong>, my goal is to
+      bridge the gap between <strong>academic learning and industry expectations</strong>, helping
+      students become confident, job-ready professionals.
+    </p>
+
+    <h4 style="margin-top: 30px; color: #0B3C5D;">
+      Core Expertise
+    </h4>
+
+    <ul style="padding-left: 20px; line-height: 1.9; color: #333;">
+      <li>Backend Engineering – Java & Spring Boot</li>
+      <li>REST APIs & Microservices Architecture</li>
+      <li>Database Design & SQL Optimization</li>
+      <li>System Design (LLD & HLD)</li>
+      <li>Interview Preparation & Career Guidance</li>
+    </ul>
+
+    <blockquote class="trainer-quote">
+      “I believe students should understand <strong>why</strong> systems are built in a certain way,
+      not just <strong>how</strong> to write code. My training focuses on clarity, practical thinking,
+      and interview confidence.”
+    </blockquote>
+
   </div>
+</section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -224,7 +304,7 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 <span>InReady Labs</span> | Industry-Ready Tech Training
+    <span id="year"></span> <span>InReady Labs</span> | Industry-Ready Tech Training
   </footer>
 
 </body>
